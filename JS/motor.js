@@ -54,7 +54,7 @@ function desplegable(){
     var selector="";
     if(document.getElementById('talavera').checked){
        
-        selector=`<select name"talavera" id="selectala" onchange="detectavalor()">`;
+        selector=`<select name"talavera" id="selectala" onchange="dectectavalor()">`;
 
     for(let x=0; x<hoteles.length;x++){
         selector+=`<option value="${x}" >${hoteles[x].nombre}</option>`;
@@ -63,7 +63,7 @@ function desplegable(){
     selector+=`</select>`;
     document.getElementById("contenido").innerHTML=selector;
     }else{
-        selector=`<select name"toledo" id="selectole"  onchange="detectavalor()">`;
+        selector=`<select name"toledo" id="selectole"  onchange="dectectavalor()">`;
 
         for(let x=0; x<hotelesTole.length;x++){
             selector+=`<option value="${x}">${hotelesTole[x].nombre}</option>`;
